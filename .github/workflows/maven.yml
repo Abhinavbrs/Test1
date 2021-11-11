@@ -17,7 +17,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: My action
-      uses: ./action
+      uses: ./
     - name: Build n push
       run: |
         docker build .
