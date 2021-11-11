@@ -35,4 +35,9 @@ ENV MAVEN_CONFIG "$USER_HOME_DIR/.m2"
 
 COPY . /project
 
+WORKDIR /project
+
+RUN mvn install
+RUN mvn clean verify
+
 CMD [""]
